@@ -14,12 +14,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700:600:500:400:300:&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- ================================= NAVBAR ============================ -->
 
     <nav>
       <div class="nav">
+        <i class="fa-solid fa-bars"></i>
         <a id="brand-link" href="">AinSoft</a>
         <div class="nav-items">
           <a href="">Home</a>
@@ -31,6 +37,12 @@
           <a id="sign-in" class="sign-in" href="">Sign in</a>
           <a id="sign-up" class="sign-up" href="">Sign up</a>
         </div>
+      </div>
+      <div class="dropdown_menu open">
+        <a href="">Home</a>
+        <a href="">Categories</a>
+        <a href="">How it works</a>
+        <a href="">Pricing</a>
       </div>
 
       <!--================================== END OF NAVBAR ======================================= -->
@@ -143,7 +155,12 @@
             <div class="head">
               <h1>Game Recommend For You this Week</h1>
             </div>
-            <div><img src="../img/rectangle.png" alt="" />arrow</div>
+
+            <div class="img-part33">
+              <div class="img-102">
+                <img src="../img/rectangle.png" alt="" />
+              </div>
+            </div>
           </div>
 
           <div class="parentofall2">
@@ -217,12 +234,21 @@
       <!--======================================= Part 4  ==================================-->
 
       <section class="part-4">
-        <div>
-          <div>MOST PLAYED GAME Of the Year</div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="heading-part4">
+          <h1>Most Played Game of the year</h1>
+        </div>
+
+        <div class="main-part4">
+          <div class="pic1-part4"></div>
+          <p>
+            We have data on the most played games this year and as a result,
+            games about battles and wars are very popular with gamers at this
+            time, so we recommend this game into your cart to be used as your
+            game.
+          </p>
+          <div class="paragraph">
+            <div class="pic3-part4"></div>
+            <div class="pic2-part4"></div>
           </div>
         </div>
       </section>
@@ -232,13 +258,19 @@
       <!--======================================= Part 5  ==================================-->
 
       <section class="part-5">
-        <div>
-          <h1>Have An Unforgettable Experience</h1>
-          <p>
-            Have an unforgettable experience and play now to get attractive
-            promos
-          </p>
-          <button>Get Started</button>
+        <div class="main-part5">
+          <div class="heading-part5">
+            <h1>Have An Unforgettable Experience</h1>
+          </div>
+          <div class="para-part5">
+            <p>
+              Have an unforgettable experience and play now to get attractive
+              promos
+            </p>
+          </div>
+          <div class="btn-part5">
+            <button>Get Started</button>
+          </div>
         </div>
       </section>
 
@@ -246,19 +278,69 @@
     </main>
 
     <pre-footer>
-      <div>
-        <div>AinSoft</div>
-        <div>Articles</div>
-        <div>Leagues</div>
-        <div>Team</div>
-        <div>Get in touch</div>
+      <div class="footer">
+        <div class="ain">
+          <h1>Ainsoft</h1>
+          <p>Play lots of games here and</p>
+          <p>subscribe right away</p>
+          <div class="image-part5">
+            <div><img src="./img/facebook.png" alt="" /></div>
+            <div><img src="./img/instagram.png" alt="" /></div>
+            <div><img src="./img/twitter.png" alt="" /></div>
+          </div>
+        </div>
+
+        <div class="footer-head">
+          <div class="footer1">
+            <h1>Articles</h1>
+            <p>Crowfunding</p>
+            <p>Website donations</p>
+            <p>Carreers</p>
+            <p>Event registrations</p>
+            <p>Newsrooms</p>
+          </div>
+
+          <div class="footer2">
+            <h1>Leagues</h1>
+            <p>Our story</p>
+            <p>Community driven</p>
+            <p>Our custemer</p>
+            <p>Expert support</p>
+          </div>
+        </div>
+
+        <div class="footer-head2">
+          <div class="footer3">
+            <h1>Team</h1>
+            <p>About us</p>
+            <p>FAQ</p>
+            <p>Privacy & Policy</p>
+            <p>Help</p>
+          </div>
+          <div class="footer4">
+            <h1>Get in touch</h1>
+            <p>Oxpord.info@email.com</p>
+            <p>(704) 555-0127</p>
+          </div>
+        </div>
       </div>
     </pre-footer>
 
     <footer>
-      <div>All right reseved AinSoft / Dimo.ui 2021</div>
+      <div class="footer23">
+        <div>All right reseved AinSoft / Dimo.ui 2021</div>
+      </div>
     </footer>
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <script>
+      const toggleBtn = document.querySelector(".nav .fa-bars");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle(`open`);
+      };
+    </script>
   </body>
 </html>

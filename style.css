@@ -118,6 +118,8 @@ a {
   display: block;
 }
 
+/* Burger */
+
 .dropdown_menu {
   display: flex;
   flex-direction: column;

@@ -14,13 +14,12 @@ nav {
   height: 100vh;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
-    url(../Img/final.jpg);
+    url(../Img/finalfantasy9.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
 }
 
 .nav {
@@ -72,6 +71,14 @@ a {
   width: 73px;
   height: 30px;
   color: #ffffff;
+  transition: text-decoration 0.5s ease;
+}
+
+/* Hover Effect */
+
+#brand-link:hover {
+  border-bottom: 3px solid #b22222;
+  font-weight: bold;
 }
 
 .nav-items a {
@@ -84,6 +91,13 @@ a {
   color: #ffffff;
 }
 
+/* Hover Effect */
+
+.nav-items a:hover {
+  border-bottom: 3px solid #b22222;
+  font-weight: bold;
+}
+
 #sign-in {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -94,6 +108,11 @@ a {
   color: #ffffff;
 }
 
+#sign-in:hover {
+  border-bottom: 3px solid #b22222;
+  font-weight: bold;
+}
+
 #sign-up {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -102,6 +121,14 @@ a {
   line-height: 21px;
 
   color: #ffffff;
+}
+
+#sign-up:hover {
+  opacity: 0.8;
+}
+
+#sign-up:active {
+  opacity: 0.8;
 }
 
 #brand-link {
@@ -330,6 +357,26 @@ a {
   }
 }
 
+/* Hover Effect */
+
+#learn-more:hover {
+  background-color: #3d73ff;
+  border: 1.2px solid #3d73ff;
+  color: white;
+}
+
+#learn-more:active {
+  opacity: 0.7;
+}
+
+#get-started:hover {
+  opacity: 0.8;
+}
+
+#get-started:active {
+  opacity: 0.5;
+}
+
 /*=========================== Part 1 =======================*/
 
 /* Font Style */
@@ -387,34 +434,50 @@ a {
 }
 
 .card-1 {
-  border: solid 1px red;
-  background-image: url(../img/dog.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/finalfantasy2.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: right;
   padding: 20rem 0 0;
 }
 
 .card-2 {
-  border: solid 1px red;
-  background-image: url(../img/dog.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/finalfantasy3.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: right;
   padding: 20rem 0 0;
 }
 
 .card-3 {
-  border: solid 1px red;
-  background-image: url(../img/dog.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/finalfantasy4.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: left;
   padding: 20rem 0 0;
 }
 
 .card-4 {
-  border: solid 1px red;
-  background-image: url(../img/dog.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/finalfantasy5.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: right;
   padding: 20rem 0 0;
 }
 
@@ -424,6 +487,21 @@ a {
   padding-bottom: 30px;
   padding-top: 16px;
   padding-left: 16px;
+}
+
+/* Hover */
+
+.content-card:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.content-card button:hover {
+  opacity: 0.8;
+}
+
+.content-card button:active {
+  opacity: 0.9;
 }
 
 .content-card button {
@@ -441,6 +519,8 @@ a {
   padding-bottom: 10px;
   padding-left: 14px;
   padding-right: 14px;
+  cursor: pointer;
+  border: 0px;
 }
 
 @media (max-width: 768px) {
@@ -461,6 +541,22 @@ a {
     font-size: 24px;
     line-height: 36px;
     text-align: center;
+  }
+
+  .card-1 {
+    background-position: center;
+  }
+
+  .card-2 {
+    background-position: center;
+  }
+
+  .card-3 {
+    background-position: center;
+  }
+
+  .card-4 {
+    background-position: center;
   }
 }
 
@@ -507,6 +603,8 @@ a {
   margin-top: 40px;
   margin-right: 24px;
   background: #3d73ff;
+  cursor: pointer;
+  border: 0px;
 }
 
 #btn-2 {
@@ -519,6 +617,21 @@ a {
   background: transparent;
   color: #3d73ff;
   padding: 14px 31px;
+  cursor: pointer;
+}
+
+#btn-1:hover {
+  opacity: 0.5;
+}
+
+#btn-1:active {
+  opacity: 0.5;
+}
+
+#btn-2:hover {
+  background-color: #3d73ff;
+  border: 1.2px solid #3d73ff;
+  color: white;
 }
 
 /* Position */
@@ -527,17 +640,23 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 83px;
+  gap: 120px;
   padding: 73px;
+  margin-top: 50px;
 }
 
 .img {
-  background-image: url(../img/dog.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/finalfantasy7.jpg);
   height: 400px;
   width: 70%;
   background-size: cover;
   background-position: right center;
-  border: #3d73ff 2px solid;
+
   margin-left: 50px;
 }
 
@@ -546,6 +665,11 @@ a {
     width: 100%;
     height: 300px;
     margin: auto;
+  }
+
+  .part-2 {
+    margin: auto;
+    gap: 50px;
   }
 
   .part-2 h1 {
@@ -591,6 +715,8 @@ a {
 .part-3 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 100px;
 }
 
 .parent-row1 {
@@ -633,41 +759,37 @@ a {
 /* Image */
 .part3-img11 {
   gap: 24px;
-  border: solid 1px red;
-  background-image: url(../img/dog.jpg);
+  background-image: url(../img/episode.webp);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 350px;
   width: 300px;
 }
 
 .part3-img22 {
   gap: 24px;
-  border: solid 1px red;
-  background-image: url(../img/dog.jpg);
+  background-image: url(../img/iceborne.jpg);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 350px;
   width: 300px;
 }
 
 .part3-img33 {
   gap: 24px;
-  border: solid 1px red;
-  background-image: url(../img/dog.jpg);
+  background-image: url(../img/remake.avif);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 350px;
   width: 300px;
 }
 
 .part3-img44 {
   gap: 24px;
-  border: solid 1px red;
-  background-image: url(../img/dog.jpg);
+  background-image: url(../img/sword.jpg);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 350px;
   width: 300px;
 }
 
@@ -712,9 +834,15 @@ a {
   padding: 14px 35px;
   width: 40%;
   margin-top: 24px;
+  cursor: pointer;
 
   background: #3d73ff;
   color: #ffffff;
+  border: 0px;
+}
+
+.contentpart3 button:hover {
+  opacity: 0.8;
 }
 
 .contentpart3 {
@@ -730,31 +858,73 @@ a {
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
-  /* width: 70%; */
+  width: 70%;
   color: #ffffff;
-  margin-top: 80px;
-  margin-bottom: 60px;
+  /* margin-top: 80px; */
+  /* margin-bottom: 10px; */
+  align-items: center;
+
   /* margin-left: 120px;
   margin-right: 120px; */
 }
 
-.part-3 img {
+/* .part-3 img {
   margin-top: 80px;
   margin-bottom: 60px;
   margin-left: 120px;
   margin-right: 120px;
+} */
+
+/* Img-part33 */
+
+.img-102 {
+  background-image: url(../img/group.png);
+  background-size: cover;
+  background-position: center;
+  height: 70px;
+  width: 70px;
 }
+
+.img-103 {
+  background-image: url(../img/rectangle.png);
+  background-size: cover;
+  background-position: center;
+  height: 70px;
+  width: 70px;
+  position: relative;
+}
+
+.img-104 {
+  background-image: url(../img/Vector3.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 200px;
+  left: 20px;
+  top: 30px;
+}
+
+.img-part33 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Mobile */
 
 @media (max-width: 768px) {
   .head h1 {
     font-size: 24px;
     line-height: 36px;
     align-items: center;
+    width: 100%;
+    margin-top: auto;
   }
 
-  .img-102 {
-    display: none;
+  .part-3 {
+    padding: 10px;
   }
+
   .contentpart3 h3 {
     font-size: 16px;
     line-height: 24px;
@@ -814,6 +984,10 @@ a {
   .box3 {
     margin-bottom: 10px;
   }
+
+  .img-part33 {
+    display: none;
+  }
 }
 
 /*===================== End of part 3 =====================*/
@@ -823,7 +997,7 @@ a {
 /* pic */
 
 .pic1-part4 {
-  background-image: url(./Img/dog.jpg);
+  background-image: url(./Img/final.jpg);
   background-size: cover;
   background-position: center;
   height: 460px;
@@ -831,7 +1005,7 @@ a {
 }
 
 .pic3-part4 {
-  background-image: url(./Img/dog.jpg);
+  background-image: url(./Img/episode.webp);
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -839,7 +1013,7 @@ a {
 }
 
 .pic2-part4 {
-  background-image: url(./Img/dog.jpg);
+  background-image: url(./Img/finalfantasy8.jpg);
   background-size: cover;
   background-position: center;
   height: 250px;
@@ -970,6 +1144,10 @@ a {
     width: 156px;
   }
 
+  .heading-part4 {
+    margin-top: auto;
+  }
+
   /* font */
 
   .heading-part4 h1 {
@@ -1024,9 +1202,14 @@ a {
   font-size: 16px;
   line-height: 24px;
   padding: 13px;
-
+  border: 0px;
+  cursor: pointer;
   color: #ffffff;
   background: #3d73ff;
+}
+
+.main-part5 button:hover {
+  opacity: 0.8;
 }
 
 .part-5 {
@@ -1035,9 +1218,9 @@ a {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../Img/final.jpg);
+    url(../Img/final2.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: left top;
 }
 
 @media (max-width: 768px) {
@@ -1201,6 +1384,11 @@ a {
   line-height: 24px;
 
   color: #ffffff;
+}
+
+.footer23 .last {
+  display: flex;
+  align-items: end;
 }
 
 /* Mobile */

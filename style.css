@@ -1023,6 +1023,7 @@ a {
 .heading-part4 h1 {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1158,6 +1159,7 @@ a {
     line-height: 36px;
     text-align: center;
     color: #ffffff;
+    width: 70%;
   }
 }
 
@@ -1384,11 +1386,6 @@ a {
   line-height: 24px;
 
   color: #ffffff;
-}
-
-.footer23 .last {
-  display: flex;
-  align-items: end;
 }
 
 /* Mobile */
